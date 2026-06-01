@@ -206,7 +206,7 @@ For full coding standards, testing patterns, architecture guidelines, and commit
 
 ## Coding Conventions
 
-- **Language standard:** C99 with `#define _GNU_SOURCE` at the top of every source file
+- **Language standard:** C99 (`set(CMAKE_C_STANDARD 99)`). Only the Meltdown source (`Meltdown/paboldin/script.c`) defines `_GNU_SOURCE` (for `ucontext`/`REG_RIP`); the Spectre and test sources do not
 - **Assembly syntax:** AT&T syntax for inline `asm` blocks (GCC default)
 - **Probe array sizing:** 256 entries × 512 or 4096 bytes per entry (to span cache lines)
 - **Cache line stride:** Minimum 512 bytes between probe array entries (typically 4096 for safety)

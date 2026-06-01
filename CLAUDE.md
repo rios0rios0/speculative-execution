@@ -22,7 +22,7 @@ All exploits use the Flush+Reload side channel: flush a 256-entry probe array fr
 
 ## Conventions
 
-- C99 with `#define _GNU_SOURCE` at the top of every source file.
+- C99 (`set(CMAKE_C_STANDARD 99)`). Only the Meltdown source (`Meltdown/paboldin/script.c`) defines `_GNU_SOURCE`, for `ucontext`/`REG_RIP`; the Spectre and test sources do not.
 - Inline assembly uses AT&T syntax.
 - Probe arrays: 256 entries x 512 or 4096 bytes to span separate cache lines.
 - Timing: prefer `rdtscp` (serializing) over `rdtsc`.
