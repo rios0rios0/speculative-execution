@@ -16,6 +16,8 @@ Exceptions are acceptable depending on the circumstances (critical bug fixes tha
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-06-01
+
 ### Changed
 
 - corrected the `_GNU_SOURCE` convention in `CLAUDE.md` and `.github/copilot-instructions.md` to note only the Meltdown source defines it, not every source file
