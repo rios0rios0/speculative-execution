@@ -85,7 +85,7 @@ make -f Makefile.txt             # Standalone build with -O2 -msse2
 cd Meltdown/paboldin
 # Optional: auto-detect rdtscp support
 bash detect_rdtscp.sh            # Generates rdtscp.h
-make -f Makefile.txt             # Produces ./script binary
+make -f Makefile.txt             # Produces ./meltdown binary (run.sh expects it)
 ./run.sh                         # Full vulnerability test
 ```
 
