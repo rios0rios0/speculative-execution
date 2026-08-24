@@ -16,6 +16,8 @@ Exceptions are acceptable depending on the circumstances (critical bug fixes tha
 
 ## [Unreleased]
 
+## [0.2.2] - 2026-08-24
+
 ### Changed
 
 - corrected the standalone Meltdown build comment in `.github/copilot-instructions.md` to note it produces the `./meltdown` binary (as `run.sh` expects), not `./script`
