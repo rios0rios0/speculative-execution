@@ -30,7 +30,7 @@ This repository contains educational proof-of-concept (PoC) implementations of t
 
 **Technology Stack:** C99 (`_GNU_SOURCE`), inline x86/x86-64 AT&T assembly, `rdtscp`/`rdtsc`, `clflush` (`_mm_clflush`), `sigaction`, `sched_setaffinity`, CMake 3.13+
 
-**No build or deployment pipelines and no automated tests** -- this is a research/educational project. The only workflows are the Claude review and `@claude` mention ones.
+**No build or deployment pipelines and no automated tests** -- this is a research/educational project. CI is limited to a PR gate (`.github/workflows/checks.yaml`, rebase status + changelog fragment) plus the Claude review and `@claude` mention workflows.
 
 ## Working Effectively
 
@@ -183,7 +183,7 @@ All exploits in this repository use the same fundamental technique:
 
 ## CI/CD Pipeline
 
-There are **no build, test or deployment pipelines** in this repository. It is a standalone research project. The only workflows are `.github/workflows/claude-review.yaml` and `.github/workflows/claude-mention.yaml`, which call the shared Claude reusable workflows in `rios0rios0/pipelines` and need the `CLAUDE_CODE_OAUTH_TOKEN` secret.
+There are **no build or test pipelines** in this repository — no target is compiled or run in CI. It is a standalone research project. The workflows are `.github/workflows/checks.yaml`, a pull-request gate that calls the shared `rios0rios0/pipelines` `checks.yaml` to enforce rebase status and the changelog rule (`code-check > quality:basic-checks`); and `.github/workflows/claude-review.yaml` and `.github/workflows/claude-mention.yaml`, which call the shared Claude reusable workflows in `rios0rios0/pipelines` and need the `CLAUDE_CODE_OAUTH_TOKEN` secret.
 
 ## Development Workflow
 
