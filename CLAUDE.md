@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 mkdir build && cd build && cmake .. && make
 ```
 
-Requires GCC 7+, CMake 3.13+, Linux x86-64. Produces 10 binaries in `build/`. No CI/CD. No automated tests -- all verification is manual.
+Requires GCC 7+, CMake 3.13+, Linux x86-64. Produces 10 binaries in `build/`. No automated tests -- all verification is manual. CI is a single PR gate (`.github/workflows/checks.yaml`) enforcing rebase status and a changelog fragment; it does not build or run anything.
 
 Meltdown has a standalone build: `cd Meltdown/paboldin && make -f Makefile.txt && ./run.sh`
 
