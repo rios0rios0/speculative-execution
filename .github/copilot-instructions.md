@@ -1,6 +1,6 @@
 # Speculative Execution Repository
 
-**ALWAYS FOLLOW THESE INSTRUCTIONS FIRST.** Only fallback to additional search and context gathering if the information in these instructions is incomplete or found to be in error.
+These instructions are authoritative for this repository. Search for additional context only when they are incomplete or appear to be wrong.
 
 This repository contains educational proof-of-concept (PoC) implementations of the Meltdown (CVE-2017-5754) and Spectre (CVE-2017-5753) CPU vulnerabilities. It includes reference exploits from published research (Jann Horn et al., paboldin, rootkea) alongside original cross-process Spectre variants and supporting test utilities, all written in C99 for x86/x86-64 Linux.
 

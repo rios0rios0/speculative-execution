@@ -1,0 +1,3 @@
+kind: 'Changed'
+body: 'updated the code-review skill and `.github/copilot-instructions.md` to reference `AGENTS.md` after the `CLAUDE.md` rename and dropped the shouted instruction banner'
+time: '2026-10-29T00:32:16.630353839Z'
