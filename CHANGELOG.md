@@ -22,6 +22,12 @@ Exceptions are acceptable depending on the circumstances (critical bug fixes tha
 
 ## [Unreleased]
 
+## [0.5.2] - 2026-11-04
+
+### Changed
+
+- updated the code-review skill and `.github/copilot-instructions.md` to reference `AGENTS.md` after the `CLAUDE.md` rename and dropped the shouted instruction banner
+
 ## [0.5.1] - 2026-09-08
 
 ### Changed
